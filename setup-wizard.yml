@@ -1,0 +1,35 @@
+version: "2"
+fields:
+  - id: blocknative_dapp_id
+    target:
+      type: environment
+      name: NEXT_PUBLIC_BLOCKNATIVE_DAPP_ID
+    title: Blocknative API Key
+    description: >-
+      [Blocknative](https://blocknative.com) is an open-source JavaScript library to onboard users to Ethereum apps.
+      Please check de documentation [https://docs.blocknative.com/onboard#quickstart](https://docs.blocknative.com/onboard#quickstart) to create your own API Key.
+    required: true
+  - id: node_url
+    target:
+      type: environment
+      name: NEXT_PUBLIC_NODE_URL
+    title: Eth1.x node URL
+    description: >-
+      The dashboard must have access to a syncronized Eth1.x mainnet node.
+      If you have not already, make sure to install and sync an Eth1.x node of your choice.
+      Then, input the URL of the node that you wish to use or a remote one:
+      - Geth `http://geth.dappnode:8545` - [Install link](http://my.dappnode/#/installer/geth.dnp.dappnode.eth)
+      - Turbo Geth `http://turbo-geth.dappnode:8545` - [Install link](http://my.dappnode/#/installer/turbo-geth.dnp.dappnode)
+      - OpenEthereum `http://openethereum.dappnode:8545` - [Install link](http://my.dappnode/#/installer/openethereum.dnp.dappnode.eth)
+      - Nethermind `http://nethermind.public.dappnode:8545` - [Install link](http://my.dappnode/#/installer/nethermind.public.dappnode.eth)
+      - Remote node (example URL) `https://remote-node-provider.io`
+    required: true
+  - id: xdai_node_url
+    target:
+      type: environment
+      name: NEXT_PUBLIC_XDAI_NODE_URL
+    title: xDai node URL
+    description: >-
+      The dashboard must have access to a syncronized xDai node.
+      If you have not already, make sure to install and sync the package [Nethermind Xdai](http://my.dappnode/#/installer/nethermind-xdai.dnp.dappnode.eth).
+    required: true
