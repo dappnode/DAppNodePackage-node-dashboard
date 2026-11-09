@@ -1,10 +1,14 @@
 {
   "name": "node-dashboard.dnp.dappnode.eth",
   "version": "0.1.0",
-  "upstreamVersion": "v0.0.1",
+  "upstream": [
+    {
+      "repo": "dappnode/node-dashboard-app",
+      "version": "v0.0.1",
+      "arg": "UPSTREAM_VERSION"
+    }
+  ],
   "architectures": ["linux/amd64"],
-  "upstreamRepo": "dappnode/node-dashboard-app",
-  "upstreamArg": "UPSTREAM_VERSION",
   "shortDescription": "NODE Dashboard Dapp",
   "description": "This is a descentralized version for the [app.dappnode.io](https://app.dappnode.io) website.",
   "type": "service",
